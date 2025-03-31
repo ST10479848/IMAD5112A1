@@ -45,8 +45,9 @@ class MainActivity : AppCompatActivity() {
                                 foodOption = "Pasta"
                             } else {
 
-                                (timeEditText.text.toString() == "After-dinner-snack") {
+                                if (timeEditText.text.toString() == "After dinner snack") {
                                     foodOption = "Ice cream"
+
 
                                 }
 
