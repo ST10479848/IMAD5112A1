@@ -5,21 +5,23 @@
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#A05BAD"
+    android:background="@drawable/il570xN726795730km9q"
     tools:context=".MainActivity">
 
     <EditText
         android:id="@+id/timeEditText"
         android:layout_width="197dp"
         android:layout_height="69dp"
+        android:background="#673AB7"
+        android:backgroundTint="#673AB7"
         android:text='"Enter Time of the Day"'
-        android:textColor="#FF9800"
+        android:textColor="#B3FF02"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.015"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.007" />
+        app:layout_constraintVertical_bias="0.0" />
 
     <TextView
         android:id="@+id/timetextView"
@@ -28,13 +30,14 @@
         android:layout_marginStart="3dp"
         android:layout_marginEnd="236dp"
         android:layout_marginBottom="309dp"
+        android:background="#673AB7"
         android:fontFamily="cursive"
         android:text="Time list: (&quot;Morning&quot;, &quot;Mid-morning&quot;, &quot;Afternoon&quot;, &quot;Mid-afternoon&quot;, &quot;Dinner&quot;, &quot;After dinner snack&quot;)"
-        android:textColor="#FF9800"
+        android:textColor="#B3FF02"
         android:textSize="26sp"
         app:layout_constraintBottom_toTopOf="@+id/clickMeButton"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/timeEditText"
         app:layout_constraintVertical_bias="0.0" />
@@ -47,7 +50,7 @@
         android:layout_marginEnd="135dp"
         android:layout_marginBottom="125dp"
         android:text="CLICK ME!"
-        android:textColor="#FF9800"
+        android:textColor="#A6FF00"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="1.0"
@@ -55,12 +58,13 @@
 
     <TextView
         android:id="@+id/foodOptiontextView"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginEnd="164dp"
-        android:layout_marginBottom="112dp"
+        android:layout_width="95dp"
+        android:layout_height="38dp"
+        android:layout_marginEnd="152dp"
+        android:layout_marginBottom="116dp"
+        android:background="#673AB7"
         android:text="Food option"
-        android:textColor="#FF9800"
+        android:textColor="#B3FF02"
         app:layout_constraintBottom_toTopOf="@+id/clickMeButton"
         app:layout_constraintEnd_toEndOf="parent" />
 
