@@ -14,17 +14,24 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         enableEdgeToEdge()
         setContentView(R.layout.activity_main)
-
+// Get the references to the views from the layout
         val clickMeButton = findViewById<Button>(R.id.clickMeButton)
 
         val timeEditText = findViewById<EditText>(R.id.timeEditText)
 
         val foodOptiontextView = findViewById<TextView>(R.id.foodOptiontextView)
-
+        
+        val resetButton = findViewById<Button>(R.id.resetMeButton)
+ // Set up the click me button
         clickMeButton?.setOnClickListener {
-
+// Set up a rest Button to reset both options for the Text view and Edit View
+            resetButton.setOnClickListener {
+            timeEditText.text.clear()
+           foodOptiontextView.text = ""
+        }
+// Default food option if option is incorrect
             var foodOption: String = "Unknown Option"
-
+// Check the input from the EditText to output which food option to show
             if (timeEditText.text.toString() == "Morning") {
                 foodOption = "Eggs"
             } else {
@@ -57,6 +64,7 @@ class MainActivity : AppCompatActivity() {
                     }
                 }
             }
+    // Set the text of the TextView to the selected food option
             foodOptiontextView.text = foodOption
 
 
