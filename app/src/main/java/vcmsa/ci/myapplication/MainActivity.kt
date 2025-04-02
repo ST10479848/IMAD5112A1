@@ -24,7 +24,7 @@ class MainActivity : AppCompatActivity() {
         val resetButton = findViewById<Button>(R.id.resetMeButton)
  // Set up the click me button
         clickMeButton?.setOnClickListener {
-// Set up a rest Button to reset both options for the Text view and Edit View
+// Set up a rest Button to reset both the Text view and Edit View
             resetButton.setOnClickListener {
             timeEditText.text.clear()
            foodOptiontextView.text = ""
